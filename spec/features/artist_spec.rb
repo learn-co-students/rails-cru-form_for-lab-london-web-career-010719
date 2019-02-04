@@ -10,7 +10,7 @@ describe 'navigate' do
     expect(page).to have_css("h1", text: "My Artist")
   end
 
-  it 'to artist pages' do
+  it 'goes to artist pages' do
     visit "/artists/#{@artist.id}"
     expect(page.status_code).to eq(200)
   end
